@@ -7,7 +7,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li *ngIf="!loggedIn()" class="nav-item"><a class="btn btn-primary" routerLink="login">Login</a></li>
+                <li *ngIf="loggedIn()" class="nav-item"><a class="btn btn-primary" (click)="onLogout()" >Logout</a></li>
+
             </ul>
+
         </div>
 
     </div>
@@ -21,9 +25,12 @@
     <div class="container">
         <div class="text-center my-5">
             <h1 class="fw-bolder text-warning">Welcome to Blogger!</h1>
-            <button type="button" class="btn btn-outline-warning mt-5" data-bs-toggle="modal"
+            <button *ngIf="loggedIn()" type="button" class="btn btn-warning mt-5" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
                 Add New Post
+            </button>
+            <button *ngIf="!loggedIn()" type="button" class="btn btn-outline-warning mt-5" routerLink="login">
+               LogIn to Add New Post
             </button>
         </div>
 
@@ -37,14 +44,14 @@
 
 
     <!-- Nested row for non-featured blog posts-->
-    <div class="row   ">
+    <div class="row  justify-content-center ">
         <div class="col-lg-3 border-end border-secondary border-5 bg-light  p-5">
             <!-- side nav -->
 
             <nav class="menu" tabindex="0">
-                <header class="avatar border-bottom border-dark border-5 text-center">
-                    <img style="height: 80px; width: 80px;" src="https://i.postimg.cc/Fsy0FVLx/profile-pic-1.png" />
-                    <h5>Adith Toms Kurian </h5>
+                <header *ngIf="loggedIn()" class="avatar border-bottom border-dark border-5 text-center">
+                    <img style="height: 80px; width: 80px; border-radius: 50%; border: 5px solid gray;" src="https://i.postimg.cc/rwydmbqX/avatar.jpg" />
+                    <h5>Welcome {{currentUser}}</h5>
                 </header>
 
                 <h3 class="mt-5">Categories</h3>

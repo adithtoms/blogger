@@ -8,13 +8,17 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HttpClientModule } from "@angular/common/http";
 import { ViewpostComponent } from './components/viewpost/viewpost.component';
 import { FilterPipe } from './components/pipe/filter.pipe';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     ViewpostComponent,
-    FilterPipe
+    FilterPipe,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

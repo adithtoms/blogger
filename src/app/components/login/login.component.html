@@ -1,0 +1,11 @@
+<div class="container w-25 p-5 border border-secondary rounded bg-light mt-5 text-center">
+    <h1>Login</h1>
+    <form  action="" #loginForm='ngForm' (ngSubmit)="onLogin(loginForm)">
+        <input  type="text" placeholder="Username" class="form-control mb-4" id="uname" ngModel name="uname" required>
+
+        <input type="password" placeholder="password" class="form-control mb-4" id="psw1" ngModel name="paswrd1" required>
+
+        <button class="btn btn-primary text-center mb-4" type="submit" >Login</button>
+    </form>
+    <div class="text-center">Not registred? <a routerLink="/register">Register</a> </div>
+</div>

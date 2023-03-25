@@ -15,6 +15,7 @@ export class DashboardComponent implements OnInit {
   post: any
   filterPost:any
   searchText:any
+  currentUser:any
   
 
 
@@ -66,6 +67,17 @@ this.filterPost=this.allPost.filter((post:any)=>post.category==categoryItem || c
     this.searchText = event.target.value
     
 
+  }
+
+  loggedIn(){
+    this.currentUser=localStorage.getItem('token')
+    return localStorage.getItem('token')
+  }
+
+  onLogout(){
+    window.confirm("Are you sure you want to logout")
+    alert("Logged Out")
+    localStorage.removeItem('token')
   }
 
 

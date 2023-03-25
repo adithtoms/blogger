@@ -1,4 +1,13 @@
 {
+  "user":[
+    {
+      "email":"akil@gmail.com",
+      "uname":"akil",
+      "password":"akil123"
+
+    }
+  ],
+
   "posts": [
     {
       "id": 1,
