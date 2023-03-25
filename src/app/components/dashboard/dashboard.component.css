@@ -1,0 +1,12 @@
+.header{
+    background: url('https://i.postimg.cc/Fz2zXL7x/main.jpg')rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+a:hover{
+    cursor: pointer;
+}

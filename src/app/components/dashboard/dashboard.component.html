@@ -1,0 +1,142 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#!"><strong>Blogger</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+
+
+<!-- Page header -->
+<header class="py-5  border-bottom mb-4 header ">
+    <div class="container">
+        <div class="text-center my-5">
+            <h1 class="fw-bolder text-warning">Welcome to Blogger!</h1>
+            <button type="button" class="btn btn-outline-warning mt-5" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Add New Post
+            </button>
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- Page content-->
+<div class="container">
+
+
+    <!-- Nested row for non-featured blog posts-->
+    <div class="row   ">
+        <div class="col-lg-3 border-end border-secondary border-5 bg-light  p-5">
+            <!-- side nav -->
+
+            <nav class="menu" tabindex="0">
+                <header class="avatar border-bottom border-dark border-5 text-center">
+                    <img style="height: 80px; width: 80px;" src="https://i.postimg.cc/Fsy0FVLx/profile-pic-1.png" />
+                    <h5>Adith Toms Kurian </h5>
+                </header>
+
+                <h3 class="mt-5">Categories</h3>
+                <a (click)="filter('')">
+                    <li class=" border-bottom border-secondary p-2">All Post
+                    </li>
+                </a>
+
+                <a (click)="filter(1)">
+                    <li class=" border-bottom border-secondary p-2">Tech
+                    </li>
+                </a>
+                <a (click)="filter(3)">
+                    <li class=" border-bottom border-secondary p-2">Movies</li>
+                </a>
+                <a (click)="filter(2)">
+                    <li class=" border-bottom border-secondary p-2">Sports
+                    </li>
+                </a>
+
+
+
+            </nav>
+        </div>
+        <div class="col-lg-6 px-5">
+            <!-- Blog post-->
+            <div class="card mb-4 p-1" *ngFor="let item of filterPost | filter:searchText">
+                <a href="#!"><img style="height: 300px;" class="card-img-top" src="{{item.image}}" alt="..." /></a>
+                <div class="card-body">
+                    <h2 class="card-title h4">{{item.title}}</h2>
+                    <h5 class="text-muted fst-italic mb-2 ">By {{item.username}}</h5>
+                    <p class="card-text">{{item.content.slice(0, 100)}}... </p>
+                    <a class="btn btn-primary" href="viewpost/{{item.id}}">Conti. Read</a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-lg-3 border-start border-secondary border-5">
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Enter search term..." name="search" id="search" [(ngModel)]="searchText" (keyup)="search($event)" >
+                        <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Modal for post creation-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add new Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" [formGroup]="createPostForm">
+                        <input formControlName="id" type="text" class="form-control mt-2 p-1" placeholder="Id"
+                            name="pid" id="pid">
+                        <input formControlName="category" type="text" class="form-control mt-2 p-1"
+                            placeholder="Category" name="category" id="category">
+                        <input formControlName="title" type="text" class="form-control mt-2 p-1" placeholder="Title"
+                            name="title" id="title">
+                        <input formControlName="content" type="text" class="form-control mt-2 p-1" placeholder="Content"
+                            name="content" id="content">
+                        <input formControlName="username" type="text" class="form-control mt-2 p-1"
+                            placeholder="Username" name="username" id="username">
+                        <input formControlName="image" type="text" class="form-control mt-2 p-1" placeholder="Image Url"
+                            name="img" id="img">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" (click)="createPost()">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
+        </div>
+    </footer>

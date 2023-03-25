@@ -1,0 +1,84 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#!"><strong>Blogger</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="dashboard">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page content-->
+<div class="container mt-5 ">
+    <div class="row justify-content-center ">
+        <div class="col-lg-8 border rounded p-4 ">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">{{post.title}}</h1>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Author : {{post.username}}</div>
+                </header>
+                <!-- Preview image figure-->
+                <figure class="mb-4"><img style="height: 400px; width: 80%; " class="rounded " src={{post.image}}
+                        alt="..." /></figure>
+                <!-- Post content-->
+                <section class="mb-5">
+                    <p class="fs-5 mb-4">{{post.content}}</p>
+                </section>
+            </article>
+            <div class="mt-2">
+                <button type="button" class="btn btn-outline-warning me-4" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Edit Post
+                </button>
+                <button type="button" class="btn btn-outline-danger" (click)="deletePost()">Delete</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- model for post edit -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add new Post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="" #updatePost>
+                    <input [(ngModel)]="post.id" type="text" class="form-control mt-2 p-1" placeholder="Id" name="pid"
+                        id="pid">
+                    <input [(ngModel)]="post.category" type="text" class="form-control mt-2 p-1" placeholder="Category"
+                        name="category" id="category">
+                    <input [(ngModel)]="post.title" type="text" class="form-control mt-2 p-1" placeholder="Title"
+                        name="title" id="title">
+                    <input [(ngModel)]="post.content" type="text" class="form-control mt-2 p-1" placeholder="Content"
+                        name="content" id="content">
+                    <input [(ngModel)]="post.username" type="text" class="form-control mt-2 p-1" placeholder="Username"
+                        name="username" id="username">
+                    <input [(ngModel)]="post.image" type="text" class="form-control mt-2 p-1" placeholder="Image Url"
+                        name="img" id="img">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" (click)="editPost(updatePost)">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer-->
+<footer class="py-5 bg-dark mt-5">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
+    </div>
+</footer>

@@ -1,0 +1,84 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "category": 3,
+      "title": "New Movies Coming Out in 2023: Biggest Film Release Dates Including Marvel, DC, Netflix",
+      "content": "In 2023, huge movies will be everywhere. The latest blockbuster sequels and franchise movies dominate the box office, but streaming services are challenging the big screen with major stars and directors dropping new films on Netflix, Apple TV, Disney Plus and more. From Indiana Jones and John Wick to the Expendables and the Fast and Furious crew, will any of these countless sequels match the mega-success of last year's Top Gun: Maverick and Avatar 2, or will we see another word-of-mouth original hit like Everything Everywhere All at Once?. Speaking of sequels and franchises, of course there are a ton of superhero movies. Marvel's Ant-Man and the Wasp kick things off for the MCU, with the Guardians of the Galaxy in action for a third and possibly final time before newer heroes cross over from Disney Plus for team-up adventure The Marvels. Outside of the MCU, the much-anticipated Spider-Man: Across the Spider-Verse also drops, and we'll see another Venom-style Spider-spinoff, Kraven the Hunter. Meanwhile comic book rivals DC bring back Aquaman and the Flash, and also introduce new face Blue Beetle.",
+      "username": "Richard Trenholm",
+      "image": "https://i.postimg.cc/tC3Fyd4B/comics-1239698-1920.jpg"
+    },
+    {
+      "id": 2,
+      "category": 3,
+      "title": "The Absolute Best Sci-Fi Movies on HBO Max",
+      "content": "The Thirteenth Floor (1999)--A sci-fi murder mystery with comparisons to The Matrix, this underrated flick is worth a gander. When the inventor of the VR simulator of 1937 Los Angeles is murdered, his protegé becomes the primary suspect. Notably, Vincent D'Onofrio is among the cast.",
+      "username": "Jennifer Bisset",
+      "image": "https://i.postimg.cc/FKLr5p9R/pexels-mikhail-nilov-7672255.jpg"
+    },
+    {
+      "id": 3,
+      "category": 2,
+      "title": "Jake Paul Loses to Tommy Fury in Split Decision",
+      "content": "Jake Paul has lost a boxing match for the first time.But the biggest moment of the fight belonged to Paul, who scored a knockdown in the final round of an eight-round contest. Paul's other big moments largely came via his overhand right -- the same right hand that's knocked out fighters like Tyron Woodley and Ben Askren. Regardless, Paul looked a little out of his depth against a more technical fighter in Fury.He was largely outclassed in his first decision loss as a professional boxer. Tommy Fury, the brother of current heavyweight champ Tyson Fury, used a stiff jab to keep his opponent at bay in a fight where Paul looked noticeably slower than his opponent. The judges scored it 76-73, 76-73 for Fury, with a lone dissenting judge scoring it 74-75 for Paul.",
+      "username": "Mark Serrels",
+      "image": "https://i.postimg.cc/pL7W64M4/pexels-cottonbro-studio-4761658.jpg"
+    },
+    {
+      "id": 4,
+      "category": 2,
+      "title": "An ode to Mesut Özil, the frictionless footballer not designed for the age of rage",
+      "content": "There is of course no connection, only chance correlation, in the fact the top three teams currently in Europe’s top three leagues are also the last three teams to get rid of Pierre-Emerick Aubameyang. Arsenal, Barcelona and Borussia Dortmund have all passed on Aubameyang, Dortmund quite a long time ago. And while this is simply coincidence, it might make sense at this stage in the striker’s career, and in a sport that is always seeking marginal gains, for his agent to start marketing him on this basis, punting him around top clubs, backed by hard data, on the basis that hiring and then getting rid of Aubameyang has undeniable benefits.Here is a player who should be treated not as a regular squad member but as the football equivalent of the sacrificial goats the ancient Greeks would take into battle, to be offered up as appeasement to the gods. Sign my client. Alienate him from the squad under an agreed schedule. We guarantee an Aubameyang Uplift of at least three league places between November and March while he posts pictures of his dinner from Dubai.",
+      "username": "Barney Ronay",
+      "image": "https://i.postimg.cc/zXsTYtNb/Mesut-Ozil.jpg"
+    },
+    {
+      "id": 5,
+      "category": 2,
+      "title": "India’s WPL has captured the imagination and this is just the start",
+      "content": "Giant outdoor advertisements featuring female cricketers occupying pride of place anywhere in India is a rarity. Even more so in bustling junctures across the country’s commercial and entertainment hub, Mumbai, where time and space are ever-shrinking commodities.But a seven-storey wallscape with an artwork of the Mumbai Indians’ trio Harmanpreet Kaur, Pooja Vastrakar and Nat Sciver-Brunt has adorned a 20-storey skyscraper near the busy Haji Ali Junction in the southern part of the western Indian city since the start of the month.And so have billboards, featuring Kaur, Smriti Mandhana, Sneh Rana, Jemimah Rodrigues and Deepti Sharma – that quintet being the cream of women’s cricket talent in the country – in places of prominence, railway stations included, in Mumbai and, some 30 kilometres away, in New Mumbai.",
+      "username": "Richard Trenholm",
+      "image": "https://i.postimg.cc/SRt79kHD/wpl2.jpg"
+    },
+    {
+      "id": 6,
+      "category": 1,
+      "title": "Elon Reportedly Pulled Out of OpenAI Because They Wouldn’t Let Him Be the Big Boss",
+      "content": "Twitter and Tesla CEO Elon Musk once played the Mr. Money Bags role to Silicon Valley’s newest darling OpenAI, the makers of ChatGPT and DALLE-2. The nonprofit has become the center of the tech world’s new obsession with AI, but a new report claims that back in 2018 Musk proposed he take over the nonprofit research lab entirelyMusk was a well-known financier for the fledgling startup that came on the scene back in 2015. He and other big tech powerhouses like Reid Hoffman and Peter Thiel all put money totalling more than $1 billion into the venture. Musk once sat as co-chair of the group and was there when the nonprofit wanted to train its systems on Reddit posts. On Friday, Semafor reported based on several unnamed sources familiar with the matter that unfortunately for Musk, the people in charge of the lab including co-founder Greg Brockman and CEO Sam Altman both rejected the idea of a Musk takeover. This caused Musk to “depart” the OpenAI board that year to focus more on Tesla, though the company claimed Musk would keep supporting the project financially.",
+      "username": "Kyle Barr",
+      "image": "https://i.postimg.cc/5t1v6X6f/elonmusk.jpg"
+    },
+    {
+      "id": 7,
+      "category": 1,
+      "title": "Clever Hack Uses YouTube to Back Up Your Data in Google's Cloud for Free",
+      "content": "Although the convenience of having your digital documents backed up to the cloud and available everywhere was once a pricey privilege, Google will now enable your digital hoarding for the price of a fancy cup of coffee: 2TB of storage for just $10/month, and even more, if you need. But there’s another way to take advantage of Google’s vast expanse of cloud storage, and it’s completely free.YouTube’s not only a great way to share videos with the world, it’s also a useful archive tool—assuming you don’t mind your video content being subjected to some aggressive video compression. According to Google, basic YouTube accounts can upload videos that are up to 15 minutes in length. But verified accounts push that limit to videos that are either 12 hours long or 256 GB in size, while the number of videos that can be uploaded every day seems to vary from user to user.",
+      "username": "Andrew Liszewski",
+      "image": "https://i.postimg.cc/L5s3hnQJ/pexels-pixabay-147413.jpg"
+    },
+    {
+      "id": "12",
+      "category": "1",
+      "title": "ChatGPT Can Now Browse the Web, Help Book Flights and More",
+      "content": "If you ever tried asking ChatGPT about current events, you know the chatbot could only manage to spit out a limited set of answers, if at all. That's changing.On Thursday, the artificial intelligence company OpenAI announced that it's gradually rolling out plugins for ChatGPT, in a move that significantly expands the chatbot's functionality.The first wave of plugins, which are now available in alpha to select ChatGPT users and developers, allow ChatGPT to tap new sources of live data from the web, including third-party sources such as Expedia, Kayak and Instacart. Prior to this upgrade, ChatGPT was restricted to drawing information from its training data, which ran until 2021.",
+      "username": "Sareena Dayaram",
+      "image": "https://i.postimg.cc/YCj28kZQ/pexels-andrew-neel-15863103.jpg"
+    },
+    {
+      "id": "121",
+      "category": "1",
+      "title": "How to Buy a Smartwatch: The Biggest Questions to Ask Yourself",
+      "content": "Smartwatches don't come cheap, which is why it's important to choose the right one. Before spending hundreds of dollars on a new device, consider how you intend to use your smartwatch. For example, are you looking for a watch that can help you train for your next race? Or do you only care about meeting your step goal and seeing notifications on your wrist? Most people likely fall somewhere in between. The good news is that you can narrow down your options with just three questions. Do you use an iPhone or Android device? How much are you willing to spend? And how do you plan to use it?You'll also want to consider comfort, size and style. After all, a smartwatch isn't very useful if you don't enjoy wearing it. Comfort is especially important if you're looking for a smartwatch to use as a sleep tracker.",
+      "username": "Lisa Eadicicco",
+      "image": "https://i.postimg.cc/0j0ZjmFX/smart-4.jpg"
+    },
+    {
+      "id": "15",
+      "category": "3",
+      "title": "What's The Best Order to Watch 'Kaleidoscope' on Netflix?",
+      "content": "There's plenty that's familiar about Netflix's Kaleidoscope. It's a heist story, and as such, it comes with many of the story beats you might expect – old grudges, team assembly, smaller missions that set up for the big one. But there's one key way Kaleidoscope – which dropped Jan. 1 and is Netflix's No. 1 TV show right now – differs from similar shows you might have seen. You can watch the episodes in any order. The series dropped Jan. 1 and made it to the No. 1 TV show on Netflix right now. Without giving too much away, Giancarlo Esposito plays Ray Vernon (aka Leo Pap), the ringleader of a group plotting a multibillion-dollar job while settling an old score. Every episode tells a chunk of the story, focusing on Vernon's motivations, or the planning of the heist, or what unfolds in the aftermath. The segments come in whichever random order Netflix decides to deliver them to you (with the exception of the actual heist serving as the final episode). ",
+      "username": "Erin Carson",
+      "image": "https://i.postimg.cc/Ghmbhdc6/pexels-erik-mclean-7809123.jpg"
+    }
+  ]
+}
