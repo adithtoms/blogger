@@ -13,7 +13,7 @@ export class ApiService {
   }
 
   //get post by id
-  getPostById(id:string){
+  getPostById(id:any){
     return this.http.get('http://localhost:3000/posts'+'/'+id)
   }
 

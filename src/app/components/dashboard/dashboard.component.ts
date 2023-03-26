@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
 
   allPost: any
   post: any
-  filterPost:any
+  filteredPost:any
   searchText:any
   currentUser:any
   
@@ -26,7 +26,7 @@ export class DashboardComponent implements OnInit {
       this.allPost = data
       
       console.log(this.allPost);
-      this.filter("")
+      this.filterPosts("")
      
       
     })
@@ -54,12 +54,13 @@ export class DashboardComponent implements OnInit {
 
     }
     this.api.createPost(pdata).subscribe((item:any) => {
-      this.route.navigateByUrl('dashboard')
+      alert("Post Added")
+      window.location.reload()
     })
   }
 
-  filter(categoryItem:any){
-this.filterPost=this.allPost.filter((post:any)=>post.category==categoryItem || categoryItem=="")
+  filterPosts(categoryItem:any){
+this.filteredPost=this.allPost.filter((post:any)=>post.category==categoryItem || categoryItem=="")
 
   }
 

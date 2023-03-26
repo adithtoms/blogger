@@ -8,7 +8,7 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                 <li *ngIf="!loggedIn()" class="nav-item"><a class="btn btn-primary" routerLink="login">Login</a></li>
-                <li *ngIf="loggedIn()" class="nav-item"><a class="btn btn-primary" (click)="onLogout()" >Logout</a></li>
+                <li *ngIf="loggedIn()" class="nav-item"><a class="btn btn-primary" (click)="onLogout()">Logout</a></li>
 
             </ul>
 
@@ -30,7 +30,7 @@
                 Add New Post
             </button>
             <button *ngIf="!loggedIn()" type="button" class="btn btn-outline-warning mt-5" routerLink="login">
-               LogIn to Add New Post
+                LogIn to Add New Post
             </button>
         </div>
 
@@ -43,31 +43,31 @@
 <div class="container">
 
 
-    <!-- Nested row for non-featured blog posts-->
     <div class="row  justify-content-center ">
         <div class="col-lg-3 border-end border-secondary border-5 bg-light  p-5">
             <!-- side nav -->
 
             <nav class="menu" tabindex="0">
                 <header *ngIf="loggedIn()" class="avatar border-bottom border-dark border-5 text-center">
-                    <img style="height: 80px; width: 80px; border-radius: 50%; border: 5px solid gray;" src="https://i.postimg.cc/rwydmbqX/avatar.jpg" />
+                    <img style="height: 80px; width: 80px; border-radius: 50%; border: 5px solid gray;"
+                        src="https://i.postimg.cc/rwydmbqX/avatar.jpg" />
                     <h5>Welcome {{currentUser}}</h5>
                 </header>
 
                 <h3 class="mt-5">Categories</h3>
-                <a (click)="filter('')">
+                <a (click)="filterPosts('')">
                     <li class=" border-bottom border-secondary p-2">All Post
                     </li>
                 </a>
 
-                <a (click)="filter(1)">
+                <a (click)="filterPosts(1)">
                     <li class=" border-bottom border-secondary p-2">Tech
                     </li>
                 </a>
-                <a (click)="filter(3)">
+                <a (click)="filterPosts(3)">
                     <li class=" border-bottom border-secondary p-2">Movies</li>
                 </a>
-                <a (click)="filter(2)">
+                <a (click)="filterPosts(2)">
                     <li class=" border-bottom border-secondary p-2">Sports
                     </li>
                 </a>
@@ -78,7 +78,7 @@
         </div>
         <div class="col-lg-6 px-5">
             <!-- Blog post-->
-            <div class="card mb-4 p-1" *ngFor="let item of filterPost | filter:searchText">
+            <div class="card mb-4 p-1" *ngFor="let item of filteredPost | filter:searchText">
                 <a href="#!"><img style="height: 300px;" class="card-img-top" src="{{item.image}}" alt="..." /></a>
                 <div class="card-body">
                     <h2 class="card-title h4">{{item.title}}</h2>
@@ -98,7 +98,8 @@
                 <div class="card-header">Search</div>
                 <div class="card-body">
                     <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Enter search term..." name="search" id="search" [(ngModel)]="searchText" (keyup)="search($event)" >
+                        <input class="form-control" type="text" placeholder="Enter search term..." name="search"
+                            id="search" [(ngModel)]="searchText" (keyup)="search($event)">
                         <button class="btn btn-primary" id="button-search" type="button">Go!</button>
                     </div>
                 </div>
@@ -118,10 +119,11 @@
                 </div>
                 <div class="modal-body">
                     <form action="" [formGroup]="createPostForm">
-                        <input formControlName="id" type="text" class="form-control mt-2 p-1" placeholder="Id"
+                        <input formControlName="id" type="text" class="form-control  mt-2 p-1" placeholder="Id"
                             name="pid" id="pid">
-                        <input formControlName="category" type="text" class="form-control mt-2 p-1"
-                            placeholder="Category" name="category" id="category">
+                        <input formControlName="category" type="text" class="form-control mt-2 p-1" placeholder="Categories"
+                             name="category" id="category">
+                             
                         <input formControlName="title" type="text" class="form-control mt-2 p-1" placeholder="Title"
                             name="title" id="title">
                         <input formControlName="content" type="text" class="form-control mt-2 p-1" placeholder="Content"
@@ -134,7 +136,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary" (click)="createPost()">Save changes</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="createPost()">Save changes</button>
                 </div>
             </div>
         </div>

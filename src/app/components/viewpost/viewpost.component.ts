@@ -31,8 +31,9 @@ ngOnInit(): void {
 deletePost(){
   this.api.deletePost(this.postId).subscribe((data:any)=>{
     window.confirm("are you sure to delete")
+    this.route.navigateByUrl('')
   })
-  this.route.navigateByUrl('dashboard')
+  
 }
 
 editPost(uPost:any){
